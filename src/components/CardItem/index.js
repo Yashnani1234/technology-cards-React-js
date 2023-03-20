@@ -1,8 +1,9 @@
 import './index.css'
 
 const cardItem = props => {
-  const {techCard} = props
-  const {title, description, imgUrl, className} = techCard
+  const {card} = props
+  const {title, description, imgUrl, className} = card
+
   return (
     <li className={`${className}`}>
       <div>
