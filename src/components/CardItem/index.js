@@ -9,7 +9,7 @@ const cardItem = props => {
       <div>
         <h1 className="heading">{title}</h1>
         <p className="description">{description}</p>
-        <img src={imgUrl} alt="{title}" />
+        <img src={imgUrl} alt={title} />
       </div>
     </li>
   )
