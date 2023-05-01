@@ -12,31 +12,53 @@ body {
 
 /* Write CSS code here */
 
-.bg-container1 {
+.cards-app-container {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  background-color: #f4faff;
+  min-height: 100vh;
 }
-.bg-container {
+
+.cards-list-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  padding: 20px;
+  width: 80%;
+  margin-top: 48px;
 }
 
-.head {
+@media screen and (min-width: 768px) {
+  .cards-list-container {
+    margin-top: 96px;
+  }
+}
+
+.heading {
+  text-align: center;
   color: #171f46;
   font-family: 'Roboto';
-  font-size: 36px;
+  font-size: 48px;
   font-weight: bold;
 }
 
-.para {
+.description {
+  text-align: center;
   color: #64748b;
   font-family: 'Roboto';
   font-size: 18px;
-  margin-bottom: 32px;
   margin-top: 24px;
+  max-width: 625px;
+}
+
+.cards-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 32px;
+  max-width: 1100px;
+  padding-left: 0px;
 }
